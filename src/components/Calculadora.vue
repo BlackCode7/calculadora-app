@@ -3,30 +3,28 @@
     <div class="display">{{ valorCorrente || '0' }}</div>
     <div @click="limpar" class="botao">C</div>
     <!--<div v-0n:click="" class="botao">C</div>-->
-    <div v-0n:click="sinal" class="botao">+/-</div>
-    <div v-0n:click="pocentagem" class="botao">%</div>
-    <div v-0n:click="dividir" class="botao operadores">/</div>
-    <div v-0n:click="juntarNumeros('7')" class="botao">7</div>
-    <div v-0n:click="juntarNumeros('8')" class="botao">8</div>
-    <div v-0n:click="juntarNumeros('9')" class="botao">9</div>
-    <div v-0n:click="multiplicar" class="botao operadores">x</div>
-    <div v-0n:click="juntarNumeros('4')" class="botao">4</div>
-    <div v-0n:click="juntarNumeros('3')" class="botao">5</div>
-    <div v-0n:click="juntarNumeros('2')" class="botao">6</div>
-    <div v-0n:click="diminuir" class="botao operadores">-</div>
-    <div v-0n:click="juntarNumeros('1')" class="botao">1</div>
-    <div v-0n:click="juntarNumeros('2')" class="botao">2</div>
-    <div v-0n:click="juntarNumeros('3')" class="botao">3</div>
-    <div v-0n:click="somar" class="botao operadores">+</div>
-    <div v-0n:click="juntarNumeros('0')" class="botao zero">  0  </div>
-    <div v-0n:click="ponto" class="botao">.</div>
-    <div v-0n:click="resultado" class="botao operadores"> = </div>    
+    <div v-on:click="sinal" class="botao">+/-</div>
+    <div v-on:click="pocentagem" class="botao">%</div>
+    <div v-on:click="dividir" class="botao operadores">/</div>
+    <div v-on:click="juntarNumeros('7')" class="botao">7</div>
+    <div v-on:click="juntarNumeros('8')" class="botao">8</div>
+    <div v-on:click="juntarNumeros('9')" class="botao">9</div>
+    <div v-on:click="multiplicar" class="botao operadores">x</div>
+    <div v-on:click="juntarNumeros('4')" class="botao">4</div>
+    <div v-on:click="juntarNumeros('3')" class="botao">5</div>
+    <div v-on:click="juntarNumeros('2')" class="botao">6</div>
+    <div v-on:click="diminuir" class="botao operadores">-</div>
+    <div v-on:click="juntarNumeros('1')" class="botao">1</div>
+    <div v-on:click="juntarNumeros('2')" class="botao">2</div>
+    <div v-on:click="juntarNumeros('3')" class="botao">3</div>
+    <div v-on:click="somar" class="botao operadores">+</div>
+    <div v-on:click="juntarNumeros('0')" class="botao zero">  0  </div>
+    <div v-on:click="ponto" class="botao">.</div>
+    <div v-on:click="resultado" class="botao operadores"> = </div>    
   </div>  
 </template>
 
 <script>
-
-
 // Lógica da calculadora
 export default {
   data(){
